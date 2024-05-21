@@ -1,0 +1,45 @@
+---
+export interface Props {
+  href: string;
+  logo: string;
+  text: string;
+}
+
+const { href, logo, text } = Astro.props;
+---
+
+<a href={href} class="link-card" target="_blank" rel="noopener noreferrer">
+  <img src={logo} alt={text} class="logo" />
+  <span>{text}</span>
+</a>
+
+<style>
+  .link-card {
+    display: flex;
+    align-items: center;
+    background-color: #282a36;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #f8f8f2;
+    margin: 10px 0;
+    transition:
+      background-color 0.3s,
+      transform 0.3s;
+  }
+
+  .link-card:hover {
+    background-color: #44475a;
+    transform: scale(1.05);
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: 1.2em;
+  }
+</style>

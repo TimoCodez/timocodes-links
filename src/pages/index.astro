@@ -1,0 +1,78 @@
+---
+import LinkCard from '../components/LinkCard.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Links</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TimoCodes Links</h1>
+      <LinkCard
+        href="https://x.com/timocodes"
+        logo="/images/xcomwhite.png"
+        text="@TimoCodes"
+      />
+      <LinkCard
+        href="https://www.youtube.com/@TimoTalksTech?sub_confirmation=1"
+        logo="/images/youtube.webp"
+        text="Timo Talks Tech"
+      />
+      <LinkCard
+        href="https://timocodes.hashnode.dev/"
+        logo="/images/hashnode.png"
+        text="My Hashnode Blog"
+      />
+      <LinkCard
+        href="https://github.com/TimoCodez"
+        logo="/images/github.png"
+        text="TimoCodez GitHub"
+      />
+      <LinkCard
+        href="https://discord.gg/5cUgZJUFce"
+        logo="/images/discord.png"
+        text="Join the TechCommute"
+      />
+      <LinkCard
+        href="https://fi.linkedin.com/in/timo-helasvuo"
+        logo="/images/linkedin.png"
+        text="Connect with me in LinkedIn"
+      />
+      <LinkCard
+        href="https://buymeacoffee.com"
+        logo="/images/buymeacoffee.png"
+        text="Help me to help & Buy Me a Coffee"
+      />
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
